@@ -23,7 +23,7 @@ This project involves capturing and processing human upper body pose information
 3. Run the robot motion control component to make the humanoid robot mimic the detected upper body pose.
 
 ## Documentation
-For detailed documentation, including the Denavit-Hartenberg (DH) model of the NAO robot, please refer to the [Documentation] directory.
+For detailed documentation, including the Denavit-Hartenberg (DH) model of the NAO robot, please refer to ahmedemadtawfik@gmail.com
 
 ## Usage
 1. Adjust file paths and IP addresses in the code according to your setup.
