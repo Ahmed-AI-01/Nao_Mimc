@@ -7,7 +7,7 @@ mp_pose = mp.solutions.pose
 # Setup mediapipe instance
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     # Read image from file
-    frame = cv2.imread(r"C:\Users\PrideGod\OneDrive\Desktop\VS_CODES\raise hand3.jpg")
+    frame = cv2.imread(r"C:\Users\\OneDrive\Desktop\VS_CODES\raise hand3.jpg")
 
     # Recolor image to RGB
     image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -41,7 +41,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
         coordinates = {}
 
         # Print and write each landmark's name and coordinates
-        with open(r"C:\Users\PrideGod\OneDrive\Desktop\VS_CODES\output.txt", "w") as outfile:
+        with open(r"C:\Users\\OneDrive\Desktop\VS_CODES\output.txt", "w") as outfile:
             for i, landmark in enumerate(upper_body_landmarks):
                 coordinates[landmark_names[i + 11]] = (landmark.x, landmark.y, landmark.z)
                 outfile.write(f"{landmark_names[i + 11]}: x={landmark.x}, y={landmark.y}, z={landmark.z}\n")
